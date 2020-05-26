@@ -54,7 +54,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.44654F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(371, 320);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(371, 323);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btn_1
@@ -74,7 +74,7 @@
             this.in_party.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.in_party.AutoSize = true;
             this.in_party.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.in_party.Location = new System.Drawing.Point(100, 114);
+            this.in_party.Location = new System.Drawing.Point(100, 116);
             this.in_party.Name = "in_party";
             this.in_party.Size = new System.Drawing.Size(170, 29);
             this.in_party.TabIndex = 1;
@@ -87,7 +87,7 @@
             this.title.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.title.Location = new System.Drawing.Point(185, 161);
+            this.title.Location = new System.Drawing.Point(185, 164);
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(0, 29);
             this.title.TabIndex = 2;
@@ -98,7 +98,7 @@
             this.content.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.content.AutoSize = true;
             this.content.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.content.Location = new System.Drawing.Point(185, 215);
+            this.content.Location = new System.Drawing.Point(185, 218);
             this.content.Name = "content";
             this.content.Size = new System.Drawing.Size(0, 105);
             this.content.TabIndex = 3;
@@ -108,9 +108,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 381);
+            this.ClientSize = new System.Drawing.Size(418, 384);
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(440, 440);
             this.Name = "Form1";
             this.Text = "SC2 Co-op strat roulette";
             this.Load += new System.EventHandler(this.Form1_Load);

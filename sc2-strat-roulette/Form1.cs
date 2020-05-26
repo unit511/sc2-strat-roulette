@@ -14,38 +14,35 @@ namespace sc2_strat_roulette
     {
         Random rng = new Random();
         int selector = 0;
-        //strategy names go here
-        string[] titles = new string[] {"Death by transport",  "Mech is for losers", "Covert ops", "Purification", "The One Who Nukes", "Minefield", "Laser party", "Science hurts", "My army now", "Annihilation commencing", "Offesive base", "Disco time", "Budget earthsplitter", "The knitting crew", "Old reliable", "Tickle beams", "Optics online"};
-        //strategy descriptions go here
-        string[] desc = new string[] {
-        "You are only allowed to make Alarak's war prisms",
-        "You are only allowed to make Nova's barracks units",
-        "Only spec ops ghosts and covert banshees are allowed",
-        "Only Fenix's disruptors are allowed",
-        "Build as many ghost academies as you can afford and let the nukes rain",
-        "Stop amon by covering everything with spider mines",
-        "You are only allowed to make battlecruisers",
-        "Mass science vessel",
-        "Mass dark archon",
-        "You are only allowed to build void rays",
-        "You are only allowed to use primal hives and wardens in addition to Dehaka",
-        "Only oracles can be built",
-        "Only bile launchers can be made",
-        "Only swarm queens can be used",
-        "You are only allowed to make brood queens",
-        "Mass shieldguard",
-        "Mass cyclone"};
-        //strategy names for party go here
-        string[] party_titles = new string[] {"Coordinates received", "We are here in the shadows", "The golden armada", "Forbidden machines", "We move unseen", "Immortalisk", "Energy never dies"};
-        ////strategy descriptions for party go here
-        string[] party_desc = new string[] {
-        "Mass wraith with support from Vorazun ally",
-        "Both players must only make stalkers",
-        "Only protoss capital ships are allowed",
-        "Both players must only make colossi",
-        "One player plays Vorazun, only cloaked units are allowed",
-        "Kerrigan masses ultralisk and abuses Artanis' passive",
-        "Both players must mass archons"};
+        //solo strategies go here ("name", "description")
+        string[] solostrats = new string[] {
+        "Death by transport", "You are only allowed to make Alarak's war prisms",
+        "Mech is for losers", "You are only allowed to make Nova's barracks units",
+        "Covert ops", "Only spec ops ghosts and covert banshees are allowed",
+        "Purification", "Only Fenix's disruptors are allowed",
+        "The One Who Nukes", "Build as many ghost academies as you can afford and let the nukes rain",
+        "Minefield", "Stop amon by covering everything with spider mines",
+        "Laser party", "You are only allowed to make battlecruisers",
+        "Science hurts", "Mass science vessel",
+        "My army now", "Mass dark archon",
+        "Annihilation commencing", "You are only allowed to build void rays",
+        "Offesive base", "You are only allowed to use primal hives and wardens in addition to Dehaka",
+        "Disco time", "Only oracles can be built",
+        "Budget earthsplitter", "Only bile launchers can be made",
+        "The knitting crew", "Only swarm queens can be used",
+        "Old reliable", "You are only allowed to make brood queens",
+        "Tickle beams", "Mass shieldguard",
+        "Optics online", "Mass cyclone"};
+        ////party strategies go here ("name", "description")
+        string[] partystrats
+            = new string[] {
+        "Coordinates received", "Mass wraith with support from Vorazun ally",
+        "We are here in the shadows", "Both players must only make stalkers",
+        "The golden armada", "Only protoss capital ships are allowed",
+        "Forbidden machines", "Both players must only make colossi",
+        "We move unseen", "One player plays Vorazun, only cloaked units are allowed",
+        "Immortalisk", "Kerrigan masses ultralisk and abuses Artanis' passive",
+        "Energy never dies", "Both players must mass archons"};
         public Form1()
         {
             InitializeComponent();
@@ -60,15 +57,15 @@ namespace sc2_strat_roulette
         {
             if (in_party.Checked) //displays random party strategy
             {
-                selector = rng.Next(party_titles.Length);
-                title.Text = party_titles[selector];
-                content.Text = party_desc[selector];
+                selector = 2 * rng.Next(partystrats.Length / 2);
+                title.Text = partystrats[selector];
+                content.Text = partystrats[selector + 1];
             }
             else //displays random one player strategy
             {
-                selector = rng.Next(titles.Length);
-                title.Text = titles[selector];
-                content.Text = desc[selector];
+                selector = 2 * rng.Next(solostrats.Length / 2);
+                title.Text = solostrats[selector];
+                content.Text = solostrats[selector + 1];
             }
         }
 
