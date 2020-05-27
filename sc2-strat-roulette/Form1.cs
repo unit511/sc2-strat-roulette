@@ -38,8 +38,7 @@ namespace sc2_strat_roulette
         "One woman army", "Only Nova and calldowns are allowed",
         "A problem explosives can solve", "You are only allowed to make widow mines"};
         ////party strategies go here ("name", "description")
-        string[] partystrats
-            = new string[] {
+        string[] partystrats = new string[] {
         "Coordinates received", "Mass wraith with support from Vorazun ally",
         "We are here in the shadows", "Both players must only make stalkers",
         "The golden armada", "Only protoss capital ships are allowed",
