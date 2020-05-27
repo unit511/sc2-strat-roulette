@@ -32,7 +32,11 @@ namespace sc2_strat_roulette
         "The knitting crew", "Only swarm queens can be used",
         "Old reliable", "You are only allowed to make brood queens",
         "Tickle beams", "Mass shieldguard",
-        "Optics online", "Mass cyclone"};
+        "Optics online", "Mass cyclone",
+        "Power overwhelming", "Only units that have energy are allowed",
+        "Top of the food chain", "Only tyrannozors can by built",
+        "One woman army", "Only Nova and calldowns are allowed",
+        "A problem explosives can solve", "You are only allowed to make widow mines"};
         ////party strategies go here ("name", "description")
         string[] partystrats
             = new string[] {
@@ -42,7 +46,9 @@ namespace sc2_strat_roulette
         "Forbidden machines", "Both players must only make colossi",
         "We move unseen", "One player plays Vorazun, only cloaked units are allowed",
         "Immortalisk", "Kerrigan masses ultralisk and abuses Artanis' passive",
-        "Energy never dies", "Both players must mass archons"};
+        "Energy never dies", "Both players must mass archons",
+        "Power overwhelming", "Only units that have energy are allowed",
+        "Incoming reinforcements?", "Mass dark archon and energizer"};
         public Form1()
         {
             InitializeComponent();
