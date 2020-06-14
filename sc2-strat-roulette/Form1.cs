@@ -18,11 +18,6 @@ namespace sc2_strat_roulette
         int limiter = 0;
         List<Strategy> singleplayer = new List<Strategy>();
         List<Strategy> party = new List<Strategy>();
-        //solo strategies go here ("name", "description")
-        //string[] solostrats = new string[] {
-        ////party strategies go here ("name", "description")
-        string[] partystrats = new string[] {
-        "", ""};
         public Form1()
         {
             InitializeComponent();
